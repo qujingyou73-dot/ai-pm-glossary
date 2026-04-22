@@ -1,62 +1,63 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI 产品经理术语词典</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-  <!-- 顶部标题区 -->
-  <header>
-    <h1>AI 产品经理术语词典</h1>
-    <p class="subtitle">核心术语精选，帮你打破 AI 专业词汇障碍</p>
-    <div class="search-box">
-      <input type="text" id="searchInput" placeholder="搜索术语，支持中文或英文…" />
-    </div>
-  </header>
-
-  <!-- 主内容区 -->
-  <main>
-
-    <!-- 首页：6个类别卡片 -->
-    <section id="home">
-      <h2 class="section-title">选择类别开始学习</h2>
-      <div class="category-grid" id="categoryGrid">
-        <!-- 由 app.js 动态生成 -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI 产品经理术语词典</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- 顶部标题区 -->
+    <header>
+      <h1>AI 产品经理术语词典</h1>
+      <p class="subtitle">核心术语精选，帮你打破 AI 专业词汇障碍</p>
+      <div class="search-box">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="搜索术语，支持中文或英文…"
+        />
       </div>
-    </section>
+    </header>
 
-    <!-- 术语列表页（点击类别后显示） -->
-    <section id="termList" class="hidden">
-      <button class="back-btn" id="backBtn">← 返回首页</button>
-      <h2 id="termListTitle"></h2>
-      <div class="terms-grid" id="termsGrid">
-        <!-- 由 app.js 动态生成词卡 -->
-      </div>
-      <div class="test-bar">
-        <button class="test-btn" id="startTestBtn">开始测试 →</button>
-      </div>
-    </section>
+    <!-- 主内容区 -->
+    <main>
+      <!-- 首页：6个类别卡片 -->
+      <section id="home">
+        <h2 class="section-title">选择类别开始学习</h2>
+        <div class="category-grid" id="categoryGrid">
+          <!-- 由 app.js 动态生成 -->
+        </div>
+      </section>
 
-    <!-- 测试页 -->
-    <section id="quizPage" class="hidden">
-      <button class="back-btn" id="backFromQuiz">← 返回词库</button>
-      <div class="quiz-container" id="quizContainer">
-        <!-- 由 app.js 动态生成题目 -->
-      </div>
-    </section>
+      <!-- 术语列表页（点击类别后显示） -->
+      <section id="termList" class="hidden">
+        <button class="back-btn" id="backBtn">← 返回首页</button>
+        <h2 id="termListTitle"></h2>
+        <div class="terms-grid" id="termsGrid">
+          <!-- 由 app.js 动态生成词卡 -->
+        </div>
+        <div class="test-bar">
+          <button class="test-btn" id="startTestBtn">开始测试 →</button>
+        </div>
+      </section>
 
-    <!-- 搜索结果页 -->
-    <section id="searchResults" class="hidden">
-      <h2>搜索结果</h2>
-      <div class="terms-grid" id="searchGrid"></div>
-    </section>
+      <!-- 测试页 -->
+      <section id="quizPage" class="hidden">
+        <button class="back-btn" id="backFromQuiz">← 返回词库</button>
+        <div class="quiz-container" id="quizContainer">
+          <!-- 由 app.js 动态生成题目 -->
+        </div>
+      </section>
 
-  </main>
+      <!-- 搜索结果页 -->
+      <section id="searchResults" class="hidden">
+        <h2>搜索结果</h2>
+        <div class="terms-grid" id="searchGrid"></div>
+      </section>
+    </main>
 
-  <script src="data.js"></script>
-  <script src="app.js"></script>
-</body>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+  </body>
 </html>
